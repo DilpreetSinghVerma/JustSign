@@ -1,0 +1,64 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">English To ISL Project</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/">Home</a>
+        </li>
+        {% if g.user %}
+          <li class="nav-item">
+            <a class="nav-link" href="/convert">Converter</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/player">Text2ISL</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="/chunker">Chunker</a>
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link" href="/sigml">SIGML</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/punjabi">ISL Punjabi</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/announcements">Railways</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/airports">Airports</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/dictionary">ISL Dictionary</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/dictionarywithvideo">ISL Dictionary Video</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/ar-interpreter">AR Interpreter</a>
+          </li>
+        {% endif %}
+        <li class="nav-item">
+          <a class="nav-link" href="/about">About Us</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav">
+        {% if g.user %}
+          <li class="nav-item dropdown active">
+            <span class="navbar-text dropdown-toggle" id="profileDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              {{ g.user }}
+            </span>
+            <div class="dropdown-menu" aria-labelledby="profileDropdownMenuLink">
+              <a class="dropdown-item" href="/logout">Logout</a>
+            </div>
+          </li>
+        {% else %}
+          <li class="nav-item">
+            <a class="nav-link" href="/login">Login</a>
+          </li>
+        {% endif %}
+      </ul>
+    </div>
+  </nav>

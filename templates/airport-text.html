@@ -1,0 +1,172 @@
+<html>
+
+<head>
+  <!--<link rel="stylesheet" href="style.css" type="text/css" />-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--<link rel="stylesheet" href="style600.css" type="text/css" media="screen and (max-width:600px)" />-->
+
+
+
+  <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.0/flatly/bootstrap.min.css" rel="stylesheet"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="/static/styles.css">
+
+  <script language='javascript'>
+    function startPlayer(objURL) {
+
+      parent.appletframe.startPlayer(objURL);
+    }
+
+    function getText(sel) {
+      var selected = sel.options[sel.selectedIndex].text;
+      //alert(selected);
+    }
+  </script>
+
+</head>
+
+<body class="no_margins" style="margin:15px;">
+  <img class="rounded" src="static/images/airport.jpg" id="image" style="width:100% ">
+
+  <div class=" no_margins">
+    {% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+    {% for category, message in messages %}
+    <div class="alert alert-{{ category }} mb-2">{{ message | safe }}</div>
+    {% endfor %}
+    {% endif %}
+    {% endwith %}
+  </div>
+
+  <div class="no_margins">
+    <h5>Dynamic Announcements</h5>
+  </div>
+  <form action="" method="post" style="margin:20px;" id="dynamic-form">
+    <label for="category">Announcement Category</label>
+    <select name="category" id="category" class="form-control" onChange="getAnnouncement(this);">
+      <option value="">---please select---</option>
+    </select>
+    <label for="announcement">Announcement Name</label>
+    <select name="announcement" id="announcement" class="form-control" onChange="getAnnouncementDetails(this);">
+      <option value="">---please select---</option>
+    </select>
+    <div class="dynamic-elements" id="dynamic-elements"></div>
+    <button name="subject" id="subject-dynamic" type="submit" value="play" class="btn btn-success form-control mt-2">Dynamic
+      Play</button>
+  </form>
+
+  <div class="no_margins">
+    <h5>Static Announcements</h5>
+  </div>
+  <form action="" method="post" style="margin:20px;">
+    <label for="special">Static Announcement</label>
+    <select name="special" id="special" class="form-control" onChange="getText(this);">
+      <option value="">---please select---</option>
+      {% for k in static_announcements.keys() %}
+      <option value="{{ k }}">{{ k }}</option>
+      {% endfor %}
+    </select></td>
+    <button name="subject" id="subject-static" type="submit" value="play" class="btn btn-success form-control">Static
+      Play</button></td>
+  </form>
+
+
+
+  <script language="javascript">
+    data = []
+
+    function getAnnouncement(sel) {
+      var selected = sel.options[sel.selectedIndex].value;
+      if(data){
+        announcements = [];
+        data.forEach(element => {
+          if(element.category === selected){
+            announcements.push(element)
+          }
+        });
+        if(announcements){
+          announcementSelect = document.querySelector("#announcement")
+          while (announcementSelect.hasChildNodes()) {  
+            announcementSelect.removeChild(announcementSelect.firstChild);
+          }
+          var opt = document.createElement("option");
+          opt.value = "";
+          opt.innerText = "---please select---";
+          announcementSelect.appendChild(opt);
+          announcements.forEach(element => {
+            var opt = document.createElement("option");
+            opt.value = element["eng-dynamic"];
+            opt.innerText = element["eng-dynamic"];
+            announcementSelect.appendChild(opt);
+          });
+        }
+      }
+    }
+
+    function getAnnouncementDetails(sel) {
+      var selected = sel.options[sel.selectedIndex].value;
+      if(data){
+        announcement = null;
+        data.forEach(element => {
+          if(element["eng-dynamic"] === selected){
+            announcement = element;
+          }
+        });
+        if(announcement){
+          elements = document.querySelector("#dynamic-elements")
+          elements.innerHTML = "";
+
+          announcement.depends.forEach(element => {
+            var input = document.createElement("input");
+            input.type = "text";
+            input.className = "form-control";
+            input.name = element;
+            input.id = element;
+            input.placeholder = element;
+            input.required = true;
+            var br = document.createElement("br");
+            elements.appendChild(br);
+            elements.appendChild(input);
+          });
+        }
+      }
+    }
+
+    window.addEventListener('DOMContentLoaded', (event) => {
+      var xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+          data = JSON.parse(this.responseText);
+          categories = [];
+          data.forEach(element => {
+            if(!categories.includes(element.category)){
+              categories.push(element.category)
+            }
+          });
+          categorySelect = document.querySelector("#category")
+          categories.forEach(element => {
+            var opt = document.createElement("option");
+            opt.value = element;
+            opt.innerText = element;
+            categorySelect.appendChild(opt);
+          });
+        }
+      };
+      xhttp.open("GET", "/static/airport-dynamic.json", true);
+      xhttp.send();
+    });
+  </script>
+
+
+  {% if announcement %}
+  <br>Announcement: {{ announcement }}
+  <script language="javascript">
+    window.addEventListener('DOMContentLoaded', (event) => {
+      startPlayer("airportprovider/{{ announcement | quote_plus }}");
+    });
+  </script>
+  {% endif %}
+
+</body>
+
+</html>

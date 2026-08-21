@@ -1,0 +1,42 @@
+{% extends 'layout.html' %}
+{% block body %}
+<div class="row">
+  <div class="col-lg-12 mb-5">
+    <div class="card">
+      <div class="card-header">
+        <h3>ISL Punjabi</h3>
+      </div>
+      <div class="card-body">
+        <form action="/punjabi" method="post" enctype="multipart/form-data" class="form-horizontal">
+          <div class="form-group">
+            <label for="rawtext">Text to Convert:</label>
+            <textarea name="rawtext" id="rawtext" rows="10" class="form-control" required>{% if input %}{{ input }}{% endif %}</textarea>
+          </div>
+          <div class="form-group">
+            <button type="submit" name="submit" class="btn btn-primary">Convert Punjabi to ISL</button>
+            <button type="reset" class="btn btn-primary" value="reset">Reset</button>
+          </div>
+        </form>
+      </div>
+      {% if results %}
+        <div class="card-footer">
+          <div class="form-group">
+            <label>{% if type %}{{ type }}{% endif %} Results</label>
+            <textarea rows="10" class="form-control" disabled>{{ results }}</textarea>
+          </div>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+window.addEventListener('DOMContentLoaded', (event) => {
+  $(document).ready(function() {
+        $(document).keyboard({
+            language: 'punjabi',
+            keyboardPosition: 'bottom'
+        });
+    });
+});
+</script>
+{% endblock %}

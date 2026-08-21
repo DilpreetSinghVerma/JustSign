@@ -1,0 +1,6 @@
+wordnet
+sentiwordnet
+wordnet_ic
+punkt
+averaged_perceptron_tagger
+stopwords

@@ -1,0 +1,131 @@
+<html>
+
+<head>
+  <!--<link rel="stylesheet" href="style.css" type="text/css" />-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--<link rel="stylesheet" href="style600.css" type="text/css" media="screen and (max-width:600px)" />-->
+
+
+
+  <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.0/flatly/bootstrap.min.css" rel="stylesheet"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="/static/styles.css">
+
+  <script language='javascript'>
+    function startPlayer(objURL) {
+
+      parent.appletframe.startPlayer(objURL);
+    }
+
+    function getText(sel) {
+      var selected = sel.options[sel.selectedIndex].text;
+      //alert(selected);
+    }
+  </script>
+
+</head>
+
+<body class="no_margins" style="margin:15px;">
+  <img class="rounded" src="static/images/railway.jpg" id="image" style="width:100% ">
+
+  <div class=" no_margins">
+    <h5>Dynamic Announcements</h5>
+    {% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+    {% for category, message in messages %}
+    <div class="alert alert-{{ category }} mb-2">{{ message | safe }}</div>
+    {% endfor %}
+    {% endif %}
+    {% endwith %}
+    <form action="" method="post" style="margin:20px;">
+      <div class="row">
+        <div class="col">
+          <div class="form-group">
+            <label for="Announcements">Announcement Type </label>
+            <select name="Annoucements" id="Announcements" class="form-control">
+              <option value="">--please select--</option>
+              <option value="Arriving">Arriving</option>
+              <option value="Arriving_shortly">Arriving shortly</option>
+              <option value="Available">Available</option>
+              <option value="Departure">Departure</option>
+              <option value="Departure_shortly">Departure shortly</option>
+              <option value="expected_to_arrive">Expected to arrive</option>
+              <option value="running_late">Running Late</option>
+              <option value="empty_train">Empty Train </option>
+              <option value="special_train">Special train</option>
+              <option value="cancel">Train cancel</option>
+            </select>
+          </div>
+        </div>
+        <div class="col">
+          <div class="form-group">
+            <label for="number">Platform Number</label>
+            <select name="number" style="min-width:100" class="form-control">
+              <option value="">-select-</option>
+              {% for i in range(1,10) %}
+              <option value="{{ i }}">{{ i }}</option>
+              {% endfor %}
+            </select>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col">
+          <div>
+            <label for="hour">Time(Hours)</label>
+            <select name="hour" id="hour" class="form-control">
+              <option value="">-Hrs-</option>
+              {% for i in range(1,25) %}
+              <option value="{{ i }}">{{ i }}</option>
+              {% endfor %}
+            </select>
+          </div>
+        </div>
+        <div class="col">
+          <div>
+            <label for="minute">Time(Minutes)</label>
+            <select name="minute" id="minute" class="form-control">
+              <option value="">-Mins-</option>
+              {% for i in range(1,61) %}
+              <option value="{{ i }}">{{ i }}</option>
+              {% endfor %}
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <button name="subject" type="submit" value="play" class="form-control btn btn-success">Dynamic play</button>
+
+    </form>
+  </div>
+
+  <div class="no_margins">
+    <h5>Static Announcements</h5>
+  </div>
+  <form action="" method="post" style="margin:20px;">
+    <label for="special">Static Announcement</label>
+    <select name="special" id="special" class="form-control" onChange="getText(this);">
+      <option value="">---please select---</option>
+      {% for k in static_announcements.keys() %}
+      <option value="{{ k }}">{{ k }}</option>
+      {% endfor %}
+    </select></td>
+    <button name="subject" id="subject" type="submit" value="play" class="btn btn-success form-control">Static
+      Play</button></td>
+  </form>
+
+
+  {% if announcement %}
+  <br>Announcement: {{ announcement }}
+  <script language="javascript">
+    window.addEventListener('DOMContentLoaded', (event) => {
+      startPlayer("railwayprovider/{{ announcement | quote_plus }}");
+    });
+  </script>
+  {% endif %}
+
+</body>
+
+</html>

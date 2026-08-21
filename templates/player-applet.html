@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>SiGML Player Applet loc.2017</title>
+
+<meta http-equiv="Access-Control-Allow-Origin" content="*">
+<meta http-equiv="Access-Control-Allow-Methods" content="GET">
+
+<link rel="stylesheet" href="http://vhg.cmp.uea.ac.uk/tech/jas/vhg2017/cwa/cwasa.css" />
+<script type="text/javascript" src="http://vhg.cmp.uea.ac.uk/tech/jas/vhg2017/cwa/allcsa.js"></script>
+<script language="javascript">
+	// Initial configuration
+	var initCfg = {
+		"avsbsl" : ["luna", "siggi", "anna", "marc", "francoise"],
+		"avSettings" : { "avList": "avsbsl", "initAv": "luna" }
+		};
+</script>
+
+</head>
+
+<body onload="CWASA.init(initCfg);" >
+
+<script language="javascript">
+
+function playText(stext) {
+	CWASA.playSiGMLText(stext);
+}
+
+function setSiGMLURL(sigmlURL) {
+	var loc = window.location.href;
+    var locDir = loc.substring(0, loc.lastIndexOf('/'));
+	// console.log("SiGML: "+sigmlURL);
+	// console.log("Location Dir: "+locDir);
+	sigmlURL = locDir + "/" + sigmlURL;
+	// console.log("URL "+sigmlURL);
+	document.getElementById("URLText").value = sigmlURL;
+	return sigmlURL;
+}
+
+function startPlayer(sigmlURL) {
+	sigmlURL = setSiGMLURL(sigmlURL);
+    // Equivalent to click on Sign button
+	CWASA.playSiGMLURL(sigmlURL);
+}
+
+window.addEventListener('message', function(event) {
+    if (event.data && event.data.type === 'play') {
+        startPlayer(event.data.sigmlURL);
+    }
+});
+
+</script>
+
+<div style="box-sizing: border-box; width: 100%; height: 100%; padding: 0px; margin:0px; border:0px;" >
+<table align="center" style="width:100%; height:100%; border:0; margin:0; border-spacing:0px; border-collapse: collapse;" >
+<tr align="center">
+
+<!--================================================================-->
+<!-- CWA signing avatar panel 0 -->
+<!--================================================================-->
+<!-- Replaced by an avatar panel -->
+<!--================================================================-->
+<td width="100%" height="95%" >
+	<div class="CWASAAvatar av0" align="center" ></div>
+</td>
+<!--================================================================-->
+
+</tr>
+
+<tr>
+
+<td align="center" bgcolor="#A3B8D2">
+
+<span class="CWASAAvMenu av0" ></span>
+<input type="button" value="Sign" class="bttnPlaySiGMLURL av0" />
+<input type="button" value="Stop" class="bttnStop av0" />
+<span class="CWASASpeed av0" ></span>
+
+<span style="font-size: 90%;" >
+Sign/Frame:
+<input class="txtSF av0" value="0/0" type="text">
+</span>
+<br>
+<span style="font-size: 200%;" >
+Gloss:
+<input class="txtGloss av0" value="" type="text">
+</span>
+
+<!--  CachedSiGML URL  -->
+<input type="text" id="URLText" class="txtSiGMLURL av0 undisplayed" value="" />
+
+<script language="javascript">
+// Set default sign
+setSiGMLURL("sigmlprovider/hello");
+</script>
+
+</td>
+</tr>
+
+</table>
+
+</div>
+
+</body>
+
+</html>

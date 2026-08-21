@@ -1,0 +1,62 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <list>
+          <option value="appdirs" />
+          <option value="astroid" />
+          <option value="blis" />
+          <option value="catalogue" />
+          <option value="certifi" />
+          <option value="chardet" />
+          <option value="contextlib2" />
+          <option value="cymem" />
+          <option value="distlib" />
+          <option value="distro" />
+          <option value="et-xmlfile" />
+          <option value="gunicorn" />
+          <option value="html5lib" />
+          <option value="idna" />
+          <option value="ipaddr" />
+          <option value="isort" />
+          <option value="jdcal" />
+          <option value="joblib" />
+          <option value="lazy-object-proxy" />
+          <option value="lockfile" />
+          <option value="mccabe" />
+          <option value="msgpack" />
+          <option value="murmurhash" />
+          <option value="nltk" />
+          <option value="numpy" />
+          <option value="openpyxl" />
+          <option value="packaging" />
+          <option value="pandas" />
+          <option value="pep517" />
+          <option value="plac" />
+          <option value="preshed" />
+          <option value="progress" />
+          <option value="pylint" />
+          <option value="pyparsing" />
+          <option value="python-dateutil" />
+          <option value="python-dotenv" />
+          <option value="pytoml" />
+          <option value="pytz" />
+          <option value="regex" />
+          <option value="requests" />
+          <option value="retrying" />
+          <option value="six" />
+          <option value="srsly" />
+          <option value="thinc" />
+          <option value="toml" />
+          <option value="tqdm" />
+          <option value="urllib3" />
+          <option value="wasabi" />
+          <option value="webencodings" />
+          <option value="wrapt" />
+          <option value="CacheControl" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>

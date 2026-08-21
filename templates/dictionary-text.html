@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English To ISL Project</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/static/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/static/favicon/site.webmanifest">
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.0/flatly/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous" defer></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" crossorigin="anonymous" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/mok-project@1.1.7/dist/main.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/mok-project@1.1.5/dist/styles.css">
+    <link rel="stylesheet" href="/static/styles.css">
+    <script type="text/javascript" src="http://vhg.cmp.uea.ac.uk/tech/jas/vhg2017/cwa/allcsa.js" defer></script>
+</head>
+<body>
+  <div class="container-fluid">
+
+    <div class="row mt-5">
+      <div class="col-lg-12 mb-5">
+        <div class="card">
+          <div class="card-header">
+            <h3>ISL Dictionary</h3>
+          </div>
+          <div class="card-body">
+            {% with messages = get_flashed_messages(with_categories=true) %}
+              {% if messages %}
+                {% for category, message in messages %}
+                  <div class="alert alert-{{ category }} mb-2">{{ message | safe }}</div>
+                {% endfor %}
+              {% endif %}
+            {% endwith %}
+            <form class="row justify-content-center mb-5">
+              <div class="col-3">
+                <input class="form-control {% if searchTerm and not search %}is-invalid{% endif %} mr-2" type="search" name="search" id="search" placeholder="Search" aria-label="Search" value="{% if searchTerm %}{{ searchTerm }}{% endif %}">
+                {% if searchTerm and not search %}
+                  <div class="invalid-feedback">No Results Found.</div>
+                {% endif %}
+              </div>
+              <button class="btn btn-outline-primary col-2 align-self-start" type="submit">Search</button>
+            </form>
+            {% if categories %}
+              <h3 class="text-center mb-5">Categories</h3>
+              <form>
+                <div class="row">
+                  {% for category in categories %}
+                    <div class="col text-center">
+                      <button type="submit" name="category" class="btn btn-primary mt-2 mb-2" value="{{ category }}">{{ category.replace("_"," ").title() }}</button>
+                    </div>
+                    {% if loop.index % 4 == 0 %}
+                      </div>
+                      <div class="row">
+                    {% endif %}
+                  {% endfor %}
+                </div>
+              </form>
+            {% endif %}
+
+            {% if category %}
+              <h3 class="text-center mb-5">{{ category.replace("_"," ").title() }}</h3>
+              <div class="row">
+                {% for element in elements %}
+                  <div class="col-2 text-center">
+                    <button data-link="{{ 'category:' + category + '-element:' + element }}" onclick="processClick(this);" class="btn btn-primary mt-2 mb-2" value="{{ element }}">{{ element.replace("_"," ").title() }}</button>
+                  </div>
+                  {% if loop.index % 5 == 0 %}
+                    </div>
+                    <div class="row">
+                  {% endif %}
+                {% endfor %}
+              </div>
+              <div class="text-center">
+                {% if video %}
+                  <a href="/dictionary-text-video" class="btn btn-primary text-center mt-5"><i class="fa fa-arrow-left" aria-hidden="true"></i> Go Back</a>
+                {% else %}
+                  <a href="/dictionary-text" class="btn btn-primary text-center mt-5"><i class="fa fa-arrow-left" aria-hidden="true"></i> Go Back</a>
+                {% endif %}
+              </div>
+            {% endif %}
+
+            {% if search %}
+              <h3 class="text-center mb-5">Search Results</h3>
+              <div class="row">
+                {% for category, element in search %}
+                  <div class="col-2 text-center">
+                    <button data-link="{{ 'category:' + category + '-element:' + element }}" onclick="processClick(this);" class="btn btn-primary mt-2 mb-2" value="{{ element }}">{{ element.replace("_"," ").title() }}</button>
+                  </div>
+                  {% if loop.index % 5 == 0 %}
+                    </div>
+                    <div class="row">
+                  {% endif %}
+                {% endfor %}
+              </div>
+              <div class="text-center">
+                {% if video %}
+                  <a href="/dictionary-text-video" class="btn btn-primary text-center mt-5"><i class="fa fa-arrow-left" aria-hidden="true"></i> Go Back</a>
+                {% else %}
+                  <a href="/dictionary-text" class="btn btn-primary text-center mt-5"><i class="fa fa-arrow-left" aria-hidden="true"></i> Go Back</a>
+                {% endif %}
+              </div>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class = "navbar navbar-expand-sm bg-light fixed-bottom mute">
+    <div class = "container">
+      <p class = "navbar-text pull-left">Deepali, Dr. Vishal Goyal</p>
+      <a href = "http://deepali-phd.herokuapp.com/" class = "navbar-btn btn-danger btn pull-right">Visit</a>
+    </div>
+  </div>
+
+
+<script language='javascript'>
+  function startPlayer(objURL) {
+    parent.appletframe.startPlayer(objURL);
+  }
+</script>
+<script language='javascript'>
+  function startVideo(objURL) {
+    parent.movieframe.startMovie(objURL);
+  }
+</script>
+
+
+
+{% if video %}
+  <script language="javascript">
+    function processClick(target){
+      startVideo("dictionarvideoyprovider/"+target.dataset.link);
+      startPlayer("dictionaryprovider/"+target.dataset.link);
+    }
+  </script>
+{% else %}
+  <script language="javascript">
+    function processClick(target){
+      startPlayer("dictionaryprovider/"+target.dataset.link);
+    }
+  </script>
+{% endif %}
+</body>
+</html>

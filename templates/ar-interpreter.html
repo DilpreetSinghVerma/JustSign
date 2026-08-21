@@ -1,0 +1,83 @@
+{% extends 'layout.html' %}
+{% block body %}
+<div class="row">
+  <div class="col-lg-12 mb-5">
+    <div class="card">
+      <div class="card-header">
+        <h3>AR Sign Language Interpreter (Prototype)</h3>
+      </div>
+      <div class="card-body text-center">
+        <p>Allow webcam access to track your hands in real-time. This is the first step for recognizing Sign Language.</p>
+        <div style="position: relative; width: 640px; height: 480px; margin: 0 auto; background: #000;">
+          <video id="webcam" style="position: absolute; left: 0; top: 0; width: 640px; height: 480px; transform: scaleX(-1);" autoplay playsinline></video>
+          <canvas id="output_canvas" style="position: absolute; left: 0; top: 0; width: 640px; height: 480px; transform: scaleX(-1);"></canvas>
+        </div>
+        <div id="status" class="mt-3 alert alert-info">Loading MediaPipe...</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MediaPipe Hands Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils/control_utils.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js" crossorigin="anonymous"></script>
+
+<script>
+  const videoElement = document.getElementById('webcam');
+  const canvasElement = document.getElementById('output_canvas');
+  const canvasCtx = canvasElement.getContext('2d');
+  const statusEl = document.getElementById('status');
+
+  canvasElement.width = 640;
+  canvasElement.height = 480;
+
+  function onResults(results) {
+    statusEl.textContent = "Webcam active & Hands Tracking Running.";
+    statusEl.className = "mt-3 alert alert-success";
+
+    canvasCtx.save();
+    canvasCtx.clearRect(0, 0, canvasElement.width, canvasElement.height);
+    
+    // Draw landmarks if hands are detected
+    if (results.multiHandLandmarks) {
+      for (const landmarks of results.multiHandLandmarks) {
+        drawConnectors(canvasCtx, landmarks, HAND_CONNECTIONS, {color: '#00FF00', lineWidth: 5});
+        drawLandmarks(canvasCtx, landmarks, {color: '#FF0000', lineWidth: 2});
+        
+        // The array 'landmarks' holds the x,y,z coordinates for each finger joint.
+        // The next step is sending this to our Python Flask API!
+      }
+    }
+    canvasCtx.restore();
+  }
+
+  const hands = new Hands({locateFile: (file) => {
+    return `https://cdn.jsdelivr.net/npm/@mediapipe/hands/${file}`;
+  }});
+  
+  hands.setOptions({
+    maxNumHands: 2,
+    modelComplexity: 1,
+    minDetectionConfidence: 0.5,
+    minTrackingConfidence: 0.5
+  });
+  
+  hands.onResults(onResults);
+
+  const camera = new Camera(videoElement, {
+    onFrame: async () => {
+      await hands.send({image: videoElement});
+    },
+    width: 640,
+    height: 480
+  });
+  camera.start().then(() => {
+    statusEl.textContent = "Starting camera...";
+  }).catch(err => {
+    statusEl.textContent = "Error accessing camera: " + err;
+    statusEl.className = "mt-3 alert alert-danger";
+  });
+</script>
+{% endblock %}

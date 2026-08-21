@@ -1,0 +1,42 @@
+# Large binaries & model JARs
+parser/*.jar
+*.jar
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+.Python
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Environment variables (secrets)
+.env
+
+# Database
+database.db
+
+# Large dataset files (not needed in repo)
+sign_dataset.csv
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Test temp files
+/temp/

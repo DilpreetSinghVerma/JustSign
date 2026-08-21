@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta http-equiv='cache-control' content='no-cache'> 
+<meta http-equiv='expires' content='0'> 
+<meta http-equiv='pragma' content='no-cache'> 
+
+<title>Movie Player</title>
+
+<meta http-equiv="Access-Control-Allow-Origin" content="*">
+<meta http-equiv="Access-Control-Allow-Methods" content="GET">
+
+<script language="javascript">
+
+function setMovieURL(movieURL) {
+	var loc = window.location.href;
+	var locDir = loc.substring(0, loc.lastIndexOf('/'));
+        movieURL = locDir + "/" + movieURL;
+	return movieURL;
+}
+
+function startMovie(movieURL) {
+	console.log(movieURL);
+	movieURL = setMovieURL(movieURL);
+	video=document.getElementById("video");
+	source=document.getElementById("mvsrc");
+	source.setAttribute('src', movieURL);
+	video.load();
+	video.play();
+}
+
+</script>
+
+
+</head>
+
+<body>
+
+<div style="box-sizing: border-box; width: 100%; height: 100%; padding: 0px; margin:0px; border:0px;" >
+<table align="center" style="width:100%; height:100%; border:0; margin:0; border-spacing:0px; border-collapse: collapse;" >
+<tr align="center">
+
+<td width="100%" height="95%" >
+	<div align="center" >
+	<video controls width="280" height="180" autoplay id='video'>
+	<source id='mvsrc' src="" type="video/mp4">
+	</video>
+	</div>
+</td>
+
+</tr>
+</table>
+
+</div>
+
+</body>
+
+</html>

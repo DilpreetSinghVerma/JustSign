@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>English To ISL Project</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="/static/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/static/favicon/site.webmanifest">
+  <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.0/flatly/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous" defer></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" crossorigin="anonymous" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/mok-project@1.1.7/dist/main.js" defer></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/mok-project@1.1.5/dist/styles.css">
+  <link rel="stylesheet" href="/static/styles.css">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="Access-Control-Allow-Origin" content="*">
+	<meta http-equiv="Access-Control-Allow-Methods" content="GET">
+	<link rel="stylesheet" href="static/scripts/bslex.css" />
+
+</head>
+	
+<body>		
+
+<header id="header">
+  {% include 'includes/_navbar.html' %}
+</header>
+
+<div id="mid">
+    <div id="a" class="split split-horizontal content">
+		<iframe src="/{{ frame }}" name="contentframe" id="contentframe" class="framepanel" > 
+		</iframe>
+    </div>
+    <div id="b" class="split split-horizontal content">
+		<iframe src="player-applet" name="appletframe" id="appletframe" class="framepanel" > 
+		</iframe>
+    </div>
+</div>
+	
+
+<script src="static/scripts/split.js"></script>
+<script>
+	Split(['#a', '#b'], {
+	  sizes: [60, 40],
+	  gutterSize: 8,
+	  cursor: 'col-resize'
+	})
+</script>
+			
+</body>
+
+</html>
