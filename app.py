@@ -232,7 +232,11 @@ def dictionarywithvideo():
 
 @app.route('/player-applet')
 def playerApplet():
-    return render_template("player-applet.html")
+    res = make_response(render_template("player-applet.html"))
+    res.headers["Access-Control-Allow-Origin"] = "*"
+    res.headers["X-Frame-Options"] = "ALLOWALL"
+    res.headers["Content-Security-Policy"] = "frame-ancestors *"
+    return res
 
 
 @app.route('/player-video')
@@ -527,7 +531,10 @@ def punjabilanguage(filename):
 
 @app.route('/sigmlprovider/<string:text>')
 def sigmlProvider(text):
-    return providers.sigmlProvider(unquote_plus(text))
+    sigml_data = providers.sigmlProvider(unquote_plus(text))
+    res = Response(sigml_data, mimetype='application/xml')
+    res.headers["Access-Control-Allow-Origin"] = "*"
+    return res
 
 
 @app.route('/railwayprovider/<string:text>')
