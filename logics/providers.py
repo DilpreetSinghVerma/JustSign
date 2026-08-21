@@ -6,6 +6,16 @@ import mimetypes
 from logics.announcements.listAnnouncements import staticAnnouncements,airportStaticAnnouncements
 from logics.isldictionary import getCategories,getElements
 
+def get_sign_files_dir():
+  base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+  local_sign_dir = os.path.join(base_dir, "SignFiles")
+  if os.path.exists(local_sign_dir):
+    return local_sign_dir
+  parent_sign_dir = os.path.abspath(os.path.join(base_dir, "..", "SignFiles"))
+  if os.path.exists(parent_sign_dir):
+    return parent_sign_dir
+  return local_sign_dir
+
 def sigmlProvider(text):
   text = text.replace("\n"," ")
   text = re.sub(r"[^a-zA-Z0-9 ]","",text.lower()).strip()
@@ -13,17 +23,24 @@ def sigmlProvider(text):
   print("recieved Text for sigml: ",text)
   words = text.split(" ")
   resultSigml = []
+  sign_dir = get_sign_files_dir()
+  
+  if os.path.exists(sign_dir):
+    dir_files = [x.lower() for x in os.listdir(sign_dir)]
+  else:
+    dir_files = []
+
   for word in words:
-    if word == "i":
-      with open(os.path.join("../SignFiles",f"i-proper.sigml")) as inpf:
+    if word == "i" and os.path.exists(os.path.join(sign_dir, "i-proper.sigml")):
+      with open(os.path.join(sign_dir, "i-proper.sigml"), encoding="utf-8", errors="ignore") as inpf:
         resultSigml.append(inpf.read().replace("$PROD",word))
-    elif f"{word}.sigml" in [x.lower() for x in os.listdir("../SignFiles")]:
-      with open(os.path.join("../SignFiles",f"{word}.sigml")) as inpf:
+    elif f"{word}.sigml" in dir_files:
+      with open(os.path.join(sign_dir, f"{word}.sigml"), encoding="utf-8", errors="ignore") as inpf:
         resultSigml.append(inpf.read().replace("gloss=\"\"","gloss=\"$PROD\"").replace("$PROD",word))
     else:
       for char in word:
-        if f"{char}.sigml" in [x.lower() for x in os.listdir("../SignFiles")]:
-          with open(os.path.join("../SignFiles",f"{char}.sigml")) as inpf:
+        if f"{char}.sigml" in dir_files:
+          with open(os.path.join(sign_dir, f"{char}.sigml"), encoding="utf-8", errors="ignore") as inpf:
             resultSigml.append(inpf.read().replace("$PROD",word))
   resultSigml = [re.sub(r"<sigml>|</sigml>","",x) for x in resultSigml]
   result = "".join(resultSigml)

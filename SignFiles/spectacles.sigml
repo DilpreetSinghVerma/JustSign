@@ -1,0 +1,19 @@
+<sigml>
+	<hns_sign gloss="">
+		<hamnosys_nonmanual>
+			<hnm_head tag="SR"/>
+			<hnm_eyebrows tag="RB"/>
+			<hnm_eyelids tag="WB"/><hnm_mouthpicture picture="spekt{kjVl3:"/>
+		</hamnosys_nonmanual>
+		<hamnosys_manual>
+			<hamcee12/>
+			<hamextfingeru/>
+			<hampalml/>
+			<hameyes/>
+			<hamlrat/>
+			<hammoveo/>
+			<hamsmallmod/>
+		</hamnosys_manual>
+	</hns_sign>
+
+</sigml>

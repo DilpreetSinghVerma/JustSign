@@ -1,0 +1,39 @@
+<sigml>
+	<hns_sign gloss="">
+		<hamnosys_nonmanual>
+		</hamnosys_nonmanual>
+		<hamnosys_manual>
+			<hamsymmlr/>
+			<hamparbegin/>
+			<hamfist/>
+			<hamplus/>
+			<hamfist/>
+			<hamparend/>
+			<hamparbegin/>
+			<hamextfingerd/>
+			<hampalml/>
+			<hamplus/>
+			<hamextfingero/>
+			<hampalmu/>
+			<hamparend/>
+			<hamparbegin/>
+			<hambelowstomach/>
+			<hamlrbeside/>
+			<hamplus/>
+			<hamshoulders/>
+			<hamparend/>
+			<hamparbegin/>
+			<hamnomotion/>
+			<hamplus/>
+			<hammoveo/>
+			<hammoveol/>
+			<hammoveol/>
+			<hammoveir/>
+			<hammoveir/>
+			<hamparend/>
+		</hamnosys_manual>
+	</hns_sign>
+
+	<hns_sign gloss=""><hamnosys_nonmanual><hnm_body tag=""/><hnm_shoulder tag=""/><hnm_head tag=""/><hnm_mouthpicture picture="be_Ik@"/><hnm_eyegaze tag=""/><hnm_eyebrows tag=""/><hnm_nose tag=""/><hnm_eyelids tag=""/></hamnosys_nonmanual><hamnosys_manual><hamsymmlr/><hamparbegin/><hamfinger2345/><hamthumboutmod/><hamplus/><hamfist/><hamparend/><hamparbegin/><hamextfingero/><hampalmu/><hamplus/><hamextfingero/><hampalmu/><hamparend/><hamparbegin/><hamshoulders/><hamplus/><hamshoulders/><hamparend/><hamparbegin/><hammoveo/><hammoveo/><hammovei/><hammovei/><hamplus/><hamnomotion/><hamparend/><hamparbegin/><hamnomotion/><hamplus/><hammoveo/><hammoveo/><hamparend/></hamnosys_manual></hns_sign>
+
+</sigml>

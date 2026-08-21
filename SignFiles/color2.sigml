@@ -1,0 +1,11 @@
+<sigml>
+	<hns_sign gloss="">
+		<hamnosys_nonmanual>
+			<hnm_mouthpicture picture="kVl@r"/>
+			<hnm_head tag="TL"/>
+			<hnm_eyebrows tag="RB"/>
+		</hamnosys_nonmanual>
+		<hamnosys_manual><hamfinger2345/><hamthumboutmod/><hamextfingeru/><hampalmu/><hamlrat/><hamshoulders/><hambetween/><hamlrat/><hamhead/><hamfingerplay/><hammover/><hamlargemod/><hamfingerplay/></hamnosys_manual>
+	</hns_sign>
+
+</sigml>

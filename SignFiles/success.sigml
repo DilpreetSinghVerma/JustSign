@@ -1,0 +1,25 @@
+<sigml>
+	<hns_sign gloss="">
+		<hamnosys_nonmanual>
+			<hnm_mouthgesture tag="L01"/>
+			<hnm_head tag="TL"/>
+		</hamnosys_nonmanual>
+		<hamnosys_manual>
+			<hamfist/>
+			<hamthumboutmod/>
+			<hamextfingero/>
+			<hampalmd/>
+			<hamshoulders/>
+			<hamlrat/>
+			<hamreplace/>
+			<hamextfingero/>
+			<hampalml/>
+			<hamshouldertop/>
+			<hamlrbeside/>
+			<hambetween/>
+			<hamhead/>
+			<hamlrbeside/>
+		</hamnosys_manual>
+	</hns_sign>
+
+</sigml>

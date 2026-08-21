@@ -1,0 +1,32 @@
+<sigml>
+	<hns_sign gloss="">
+		<hamnosys_nonmanual>
+			<hnm_body tag="TF"/>
+			<hnm_head tag="PF"/>
+			<hnm_eyegaze tag="DN"/>
+			<hnm_eyebrows tag="FU"/>
+			<hnm_eyelids tag="SB"/>
+<hnm_mouthpicture picture="sa_Iz"/>
+		</hamnosys_nonmanual>
+		<hamnosys_manual>
+			<hamsymmlr/>
+			<hamparbegin/>
+			<hampinch12open/>
+			<hamplus/>
+			<hampinch12open/>
+			<hamparend/>
+			<hamparbegin/>
+			<hamextfingero/>
+			<hampalml/>
+			<hamplus/>
+			<hamextfingero/>
+			<hampalmr/>
+			<hamparend/>
+			<hamcross/>
+			<hamshoulders/>
+			<hammover/>
+			<hammover/>
+		</hamnosys_manual>
+	</hns_sign>
+
+</sigml>

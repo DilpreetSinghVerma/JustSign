@@ -1,0 +1,5 @@
+<sigml>
+	<hns_sign gloss=""><hamnosys_nonmanual><hnm_body tag=""/><hnm_shoulder tag=""/><hnm_head tag=""/><hnm_mouthpicture picture="hooo"/><hnm_eyegaze tag=""/><hnm_eyebrows tag=""/><hnm_nose tag=""/><hnm_eyelids tag=""/></hamnosys_nonmanual><hamnosys_manual><hamsymmlr/><hamfist/><hamextfingeru/><hampalml/><hamshoulders/><hamnodding/></hamnosys_manual></hns_sign>
+
+	<hns_sign gloss=""><hamnosys_nonmanual><hnm_body tag=""/><hnm_shoulder tag=""/><hnm_head tag=""/><hnm_mouthpicture picture=""/><hnm_eyegaze tag=""/><hnm_eyebrows tag=""/><hnm_nose tag=""/><hnm_eyelids tag=""/></hamnosys_nonmanual><hamnosys_manual><hamsymmlr/><hamfinger2345/><hamthumboutmod/><hamextfingeru/><hampalmu/><hamshoulders/><hamtouch/><hammoveo/><hammoved/><hammoved/><hammoved/></hamnosys_manual></hns_sign>
+</sigml>

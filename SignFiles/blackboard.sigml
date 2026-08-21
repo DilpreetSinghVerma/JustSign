@@ -1,0 +1,29 @@
+<sigml>
+	<hns_sign gloss="">
+		<hamnosys_nonmanual>
+			<hnm_mouthpicture picture="bl{k"/>
+			<hnm_head tag="NF"/>
+			<hnm_eyebrows tag="RB"/>
+		</hamnosys_nonmanual>
+		<hamnosys_manual>
+			<hamfinger2/>
+			<hamthumbacrossmod/>
+			<hamextfingerul/>
+			<hampalmd/>
+			<hamheadtop/>
+			<hamlrbeside/>
+			<hambetween/>
+			<hamhead/>
+			<hamlrbeside/>
+			<hammovei/>
+			<hammovedr/>
+			<hamsmallmod/>
+			<hammoveul/>
+			<hamsmallmod/>
+			<hammovedr/>
+			<hamsmallmod/>
+		</hamnosys_manual>
+	</hns_sign>
+<hns_sign gloss=""><hamnosys_nonmanual><hnm_body tag=""/><hnm_shoulder tag=""/><hnm_head tag=""/><hnm_mouthpicture picture="bO:rd"/><hnm_eyegaze tag=""/><hnm_eyebrows tag=""/><hnm_nose tag=""/><hnm_eyelids tag=""/></hamnosys_nonmanual><hamnosys_manual><hamsymmlr/><hamfinger2/><hamextfingero/><hampalmd/><hamheadtop/><hammover/><hammover/><hammoved/><hammoved/><hammoved/><hammoved/><hammovel/><hammovel/></hamnosys_manual></hns_sign>
+
+</sigml>

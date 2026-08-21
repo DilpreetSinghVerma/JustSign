@@ -1,0 +1,4 @@
+<sigml>
+	<hns_sign gloss="$PROD">
+		<hamnosys_nonmanual><hnm_mouthpicture picture="bUk"/><hnm_eyegaze tag=""/><hnm_eyebrows tag=""/><hnm_nose tag=""/><hnm_eyelids tag="CB"/></hamnosys_nonmanual>
+	<hamnosys_manual><hamsymmlr/><hamflathand/><hamextfingero/><hampalml/><hamseqbegin/><hamtouch/><hampalm/><hamseqend/><hamreplace/><hamflathand/><hamextfingero/><hampalmu/><hamseqbegin/><hamtouch/><hamfingerside/><hampinky/><hamseqend/><hamreplace/><hamflathand/><hamextfingero/><hampalml/><hamseqbegin/><hamtouch/><hampalm/><hamseqend/><hamreplace/><hamflathand/><hamextfingero/><hampalmu/><hamseqbegin/><hamtouch/><hamfingerside/><hampinky/><hamseqend/></hamnosys_manual></hns_sign></sigml>

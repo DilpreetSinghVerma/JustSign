@@ -1,0 +1,38 @@
+<sigml>
+	<hns_sign gloss="">
+		<hamnosys_nonmanual>
+			<hnm_mouthpicture picture="T3:zde_I"/>
+		</hamnosys_nonmanual>
+		<hamnosys_manual>
+			<hamparbegin/>
+			<hamflathand/>
+			<hamplus/>
+			<hamfist/>
+			<hamparend/>
+			<hamparbegin/>
+			<hamextfingerul/>
+			<hampalmd/>
+			<hamplus/>
+			<hamextfingerur/>
+			<hampalmd/>
+			<hamparend/>
+			<hamparbegin/>
+			<hamshouldertop/>
+			<hamplus/>
+			<hamlrbeside/>
+			<hamshouldertop/>
+			<hambetween/>
+			<hamshoulders/>
+			<hamparend/>
+			<hammovedl/>
+			<hamsmallmod/>
+			<hammoveur/>
+			<hamsmallmod/>
+			<hammovedl/>
+			<hamsmallmod/>
+			<hammoveur/>
+			<hamsmallmod/>
+		</hamnosys_manual>
+	</hns_sign>
+
+</sigml>

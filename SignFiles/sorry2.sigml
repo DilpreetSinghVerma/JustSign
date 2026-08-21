@@ -1,0 +1,18 @@
+<sigml>
+	<hns_sign gloss="">
+		<hamnosys_nonmanual>
+			<hnm_head tag="TL"/>
+			<hnm_eyelids tag="SB"/><hnm_mouthpicture picture="sA:ri:"/>
+		</hamnosys_nonmanual>
+		<hamnosys_manual>
+			<hamfist/>
+			<hamextfingerul/>
+			<hampalml/>
+			<hamlrat/>
+			<hamshouldertop/>
+			<hamcircleo/>
+			<hamcircleo/>
+		</hamnosys_manual>
+	</hns_sign>
+
+</sigml>

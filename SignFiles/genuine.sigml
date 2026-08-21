@@ -1,0 +1,21 @@
+<sigml>
+	<hns_sign gloss="">
+		<hamnosys_nonmanual>
+			<hnm_mouthpicture picture="WOO"/>
+			<hnm_head tag="TL"/>
+			<hnm_eyelids tag="WB"/>
+		</hamnosys_nonmanual>
+		<hamnosys_manual>
+			<hamfinger2/>
+			<hamextfingeru/>
+			<hampalml/>
+			<hamteeth/>
+			<hamreplace/>
+			<hampinch12open/>
+			<hamextfingeru/>
+			<hampalmdl/>
+			<hamshoulders/>
+		</hamnosys_manual>
+	</hns_sign>
+
+</sigml>

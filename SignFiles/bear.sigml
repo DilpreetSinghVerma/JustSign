@@ -1,0 +1,26 @@
+<sigml>
+	<hns_sign gloss="">
+		<hamnosys_nonmanual>
+			<hnm_mouthgesture tag="L04"/>
+			<hnm_head tag="SH"/>
+			<hnm_eyelids tag="SB"/><hnm_mouthpicture picture="be_@"/>
+		</hamnosys_nonmanual>
+		<hamnosys_manual>
+			<hamsymmlr/>
+			<hamfingerstraightmod/>
+			<hamlargemod/>
+			<hamfinger2345/>
+			<hamthumboutmod/>
+			<hamparbegin/>
+			<hamextfingerd/>
+			<hampalmd/>
+			<hamplus/>
+			<hamextfingerd/>
+			<hampalmd/>
+			<hamparend/>
+			<hamchest/>
+			<hamswinging/>
+		</hamnosys_manual>
+	</hns_sign>
+
+</sigml>

@@ -1,0 +1,39 @@
+<sigml>
+	<hns_sign gloss="">
+		<hamnosys_nonmanual>
+			<hnm_mouthpicture picture="sVnde_I"/>
+		</hamnosys_nonmanual>
+		<hamnosys_manual>
+			<hamsymmlr/>
+			<hamfinger2345/>
+			<hammiddlefinger/>
+			<hamdoublehooked/>
+			<hamringfinger/>
+			<hamdoublehooked/>
+			<hamindexfinger/>
+			<hamdoublehooked/>
+			<hamextfingeru/>
+			<hampalmu/>
+			<hamshouldertop/>
+			<hammovel/>
+			<hamsmallmod/>
+			<hammovel/>
+			<hamsmallmod/>
+			<hammover/>
+			<hammover/>
+			<hamsmallmod/>
+			<hamreplace/>
+			<hamflathand/>
+			<hamthumbacrossmod/>
+			<hamextfingeru/>
+			<hampalmd/>
+			<hammovel/>
+			<hamsmallmod/>
+			<hammovel/>
+			<hamsmallmod/>
+			<hammovel/>
+			<hamsmallmod/>
+		</hamnosys_manual>
+	</hns_sign>
+
+</sigml>

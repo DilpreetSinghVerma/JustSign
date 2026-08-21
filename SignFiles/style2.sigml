@@ -1,0 +1,22 @@
+<sigml>
+	<hns_sign gloss="">
+		<hamnosys_nonmanual>
+			<hnm_mouthgesture tag="L10"/>
+			<hnm_head tag="TL"/>
+			<hnm_eyebrows tag="FU"/>
+		</hamnosys_nonmanual>
+		<hamnosys_manual>
+			<hamfinger2/>
+			<hamextfingerul/>
+			<hampalmr/>
+			<hamunderchin/>
+			<hamlrat/>
+			<hamreplace/>
+			<hamextfingeru/>
+			<hampalmu/>
+			<hamhead/>
+			<hamlrbeside/>
+		</hamnosys_manual>
+	</hns_sign>
+
+</sigml>

@@ -487,7 +487,9 @@ def recognize_sign():
 
 @app.route("/api/v1/dictionary", methods=['GET'])
 def get_dictionary_words():
-    sign_dir = os.path.join(os.path.dirname(os.path.dirname(__file__)), "SignFiles")
+    sign_dir = os.path.join(os.path.dirname(__file__), "SignFiles")
+    if not os.path.exists(sign_dir):
+        sign_dir = os.path.join(os.path.dirname(os.path.dirname(__file__)), "SignFiles")
     words = []
     if os.path.exists(sign_dir):
         for f in os.listdir(sign_dir):

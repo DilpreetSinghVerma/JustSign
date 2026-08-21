@@ -1,0 +1,12 @@
+<sigml>
+	<hns_sign gloss="">
+		<hamnosys_nonmanual>
+			<hnm_mouthpicture picture="pINk"/>
+			<hnm_head tag="SL"/>
+			<hnm_eyebrows tag="FU"/>
+			<hnm_nose tag="WR"/>
+		</hamnosys_nonmanual>
+		<hamnosys_manual><hamfinger2345/><hamthumbopenmod/><hamfingerbendmod/><hamextfingeru/><hampalmul/><hamhead/><hamlrat/><hambetween/><hamshouldertop/><hamlrat/><hammovei/><hamreplace/><hampinchall/><hamreplace/><hamfinger2345/><hamthumbopenmod/><hamfingerbendmod/><hamreplace/><hampinchall/></hamnosys_manual>
+	</hns_sign>
+
+</sigml>

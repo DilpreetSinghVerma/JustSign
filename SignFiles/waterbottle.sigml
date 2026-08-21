@@ -1,0 +1,52 @@
+<sigml>
+	<hns_sign gloss="">
+		<hamnosys_nonmanual><hnm_mouthpicture picture="wO:t@bA:tVl"/><hnm_eyegaze tag=""/><hnm_eyebrows tag=""/><hnm_nose tag=""/><hnm_eyelids tag=""/></hamnosys_nonmanual>
+		<hamnosys_manual>
+			<hamsymmlr/>
+			<hamparbegin/>
+			<hamfist/>
+			<hamthumboutmod/>
+			<hamplus/>
+			<hamfist/>
+			<hamparend/>
+			<hamparbegin/>
+			<hamextfingeru/>
+			<hampalml/>
+			<hamplus/>
+			<hamextfingerd/>
+			<hampalmd/>
+			<hamparend/>
+			<hamparbegin/>
+			<hamlips/>
+			<hamplus/>
+			<hamlrbeside/>
+			<hambelowstomach/>
+			<hamparend/>
+			<hamparbegin/>
+			<hammoveo/>
+			<hamsmallmod/>
+			<hammovei/>
+			<hamsmallmod/>
+			<hamplus/>
+			<hamnomotion/>
+			<hamparend/>
+			<hamparbegin/>
+			<hamreplace/>
+			<hamflathand/>
+			<hamextfingeru/>
+			<hampalml/>
+			<hamshoulders/>
+			<hamlrbeside/>
+			<hambetween/>
+			<hamshoulders/>
+			<hamplus/>
+			<hamreplace/>
+			<hamflathand/>
+			<hamextfingerr/>
+			<hampalmd/>
+			<hamshoulders/>
+			<hamparend/>
+		</hamnosys_manual>
+	</hns_sign>
+
+</sigml>

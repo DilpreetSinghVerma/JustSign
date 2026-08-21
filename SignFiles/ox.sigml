@@ -1,0 +1,16 @@
+<sigml>
+	<hns_sign gloss="">
+		<hamnosys_nonmanual><hnm_mouthpicture picture="A:ks"/>
+		</hamnosys_nonmanual>
+		<hamnosys_manual>
+			<hamfinger2/>
+			<hamfingerbendmod/>
+			<hamextfingeru/>
+			<hampalml/>
+			<hamcheek/>
+			<hamfingerplay/>
+		</hamnosys_manual>
+	</hns_sign>
+
+	<hns_sign gloss=""><hamnosys_nonmanual><hnm_body tag=""/><hnm_shoulder tag=""/><hnm_head tag=""/><hnm_mouthpicture picture=""/><hnm_eyegaze tag=""/><hnm_eyebrows tag=""/><hnm_nose tag=""/><hnm_eyelids tag=""/></hamnosys_nonmanual><hamnosys_manual><hamsymmlr/><hamfinger2/><hamthumboutmod/><hamextfingeru/><hampalmdl/><hamheadtop/><hamlrat/><hammover/></hamnosys_manual></hns_sign>
+</sigml>

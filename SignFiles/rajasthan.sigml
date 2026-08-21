@@ -1,0 +1,8 @@
+<sigml><hns_sign gloss=""><hamnosys_nonmanual><hnm_body tag=""/><hnm_shoulder tag=""/><hnm_head tag=""/><hnm_mouthpicture picture="rVjV"/><hnm_eyegaze tag=""/><hnm_eyebrows tag=""/><hnm_nose tag=""/><hnm_eyelids tag=""/></hamnosys_nonmanual><hamnosys_manual><hamsymmlr/><hamparbegin/><hamfinger2/><hamfingerhookmod/><hamplus/><hamflathand/><hamparend/><hamparbegin/><hamextfingerol/><hampalml/><hamplus/><hamextfingeror/><hampalmu/><hamparend/><hamparbegin/><hamshouldertop/><hambetween/><hamshoulders/><hamlrat/><hamplus/><hamshoulders/><hamparend/><hamparbegin/><hammovedr/><hamplus/><hamnomotion/><hamparend/></hamnosys_manual></hns_sign>
+
+<hns_sign gloss=""><hamnosys_nonmanual><hnm_body tag=""/><hnm_shoulder tag=""/><hnm_head tag=""/><hnm_mouthpicture picture="Stan"/><hnm_eyegaze tag=""/><hnm_eyebrows tag=""/><hnm_nose tag=""/><hnm_eyelids tag=""/></hamnosys_nonmanual><hamnosys_manual><hamsymmlr/><hamparbegin/><hamceeopen/><hamplus/><hamfist/><hamparend/><hamparbegin/><hamextfingerl/><hampalmd/><hamplus/><hamextfingero/><hampalmu/><hamparend/><hammoveo/><hamparbegin/><hammoveul/><hammovedl/><hammoveu/><hammovei/><hammovel/><hamsmallmod/><hammoved/><hammoveu/><hammovei/><hammovel/><hamsmallmod/><hammovei/><hamreplace/><hamextfingerl/><hampalml/><hamplus/><hamnomotion/><hamparend/></hamnosys_manual></hns_sign>
+
+<hns_sign gloss=""><hamnosys_nonmanual><hnm_body tag=""/><hnm_shoulder tag=""/><hnm_head tag=""/><hnm_mouthpicture picture=""/><hnm_eyegaze tag=""/><hnm_eyebrows tag=""/><hnm_nose tag=""/><hnm_eyelids tag=""/></hamnosys_nonmanual><hamnosys_manual><hamfinger2/><hamextfingerur/><hampalml/><hamhead/><hamlrbeside/></hamnosys_manual></hns_sign>
+
+
+</sigml>

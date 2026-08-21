@@ -1,0 +1,16 @@
+<sigml>
+	<hns_sign gloss="">
+		<hamnosys_nonmanual>
+			<hnm_eyebrows tag="RB"/><hnm_mouthpicture picture="stre_It"/>
+		</hamnosys_nonmanual>
+		<hamnosys_manual>
+			<hamfinger2345/>
+			<hamthumboutmod/>
+			<hamextfingeru/>
+			<hampalml/>
+			<hamnose/>
+			<hammoveo/>
+		</hamnosys_manual>
+	</hns_sign>
+
+</sigml>

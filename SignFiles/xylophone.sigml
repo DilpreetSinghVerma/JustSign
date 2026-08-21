@@ -1,0 +1,113 @@
+<sigml>
+	<hns_sign gloss="">
+		<hamnosys_nonmanual>
+			<hnm_mouthpicture picture="kann"/>
+			<hnm_head tag="TR"/>
+		</hamnosys_nonmanual>
+		<hamnosys_manual>
+			<hamfinger2/>
+			<hamextfingeru/>
+			<hampalml/>
+			<hamearlobe/>
+			<hamtwisting/>
+		</hamnosys_manual>
+	</hns_sign>
+
+	<hns_sign gloss="">
+		<hamnosys_nonmanual>
+			<hnm_mouthpicture picture="ee"/>
+			<hnm_head tag="TR"/>
+		</hamnosys_nonmanual>
+		<hamnosys_manual>
+			<hamsymmlr/>
+			<hamcee12/>
+			<hamextfingeru/>
+			<hampalmd/>
+			<hamshouldertop/>
+			<hambetween/>
+			<hamshoulders/>
+			<hammover/>
+			<hammover/>
+		</hamnosys_manual>
+	</hns_sign>
+
+	<hns_sign gloss="">
+		<hamnosys_nonmanual>
+			<hnm_head tag="TR"/>
+		</hamnosys_nonmanual>
+		<hamnosys_manual>
+			<hamsymmlr/>
+			<hampinch12/>
+			<hamextfingero/>
+			<hampalml/>
+			<hamparbegin/>
+			<hamshouldertop/>
+			<hamlrat/>
+			<hamplus/>
+			<hamshouldertop/>
+			<hamlrat/>
+			<hamparend/>
+			<hamparbegin/>
+			<hammoveu/>
+			<hammoved/>
+			<hammoved/>
+			<hammoveu/>
+			<hammovel/>
+			<hamsmallmod/>
+			<hamplus/>
+			<hammoved/>
+			<hammoveu/>
+			<hammoveu/>
+			<hammoved/>
+			<hammovel/>
+			<hamsmallmod/>
+			<hamparend/>
+			<hamparbegin/>
+			<hammoveu/>
+			<hammoved/>
+			<hammoved/>
+			<hammoveu/>
+			<hammovel/>
+			<hamsmallmod/>
+			<hamplus/>
+			<hammoved/>
+			<hammoveu/>
+			<hammoveu/>
+			<hammoved/>
+			<hammovel/>
+			<hamsmallmod/>
+			<hamparend/>
+			<hamparbegin/>
+			<hammoveu/>
+			<hammoved/>
+			<hammoved/>
+			<hammoveu/>
+			<hammovel/>
+			<hamsmallmod/>
+			<hamplus/>
+			<hammoved/>
+			<hammoveu/>
+			<hammoveu/>
+			<hammoved/>
+			<hammovel/>
+			<hamsmallmod/>
+			<hamparend/>
+			<hamparbegin/>
+			<hammoveu/>
+			<hammoved/>
+			<hammoved/>
+			<hammoveu/>
+			<hammovel/>
+			<hamsmallmod/>
+			<hamplus/>
+			<hammoved/>
+			<hammoveu/>
+			<hammoveu/>
+			<hammoved/>
+			<hammovel/>
+			<hamsmallmod/>
+			<hamparend/>
+		</hamnosys_manual>
+	</hns_sign>
+
+</sigml>

@@ -1,0 +1,33 @@
+<sigml>
+	<hns_sign gloss="">
+		<hamnosys_nonmanual>
+			<hnm_mouthpicture picture="O:rVnd_Z"/>
+			<hnm_head tag="SR"/>
+			<hnm_eyebrows tag="RL"/>
+			<hnm_eyelids tag="TB"/>
+		</hamnosys_nonmanual>
+		<hamnosys_manual>
+			<hamfinger23spread/>
+			<hamthumbopenmod/>
+			<hamextfingeru/>
+			<hampalmul/>
+			<hamhead/>
+			<hamlrat/>
+			<hambetween/>
+			<hamshouldertop/>
+			<hamlrat/>
+			<hamreplace/>
+			<hamfinger23spread/>
+			<hamthumbopenmod/>
+			<hamfingerbendmod/>
+			<hamreplace/>
+			<hamfinger23spread/>
+			<hamthumbopenmod/>
+			<hamreplace/>
+			<hamfinger23spread/>
+			<hamthumbopenmod/>
+			<hamfingerbendmod/>
+		</hamnosys_manual>
+	</hns_sign>
+
+</sigml>

@@ -1,0 +1,38 @@
+<sigml>
+	<hns_sign gloss="">
+		<hamnosys_nonmanual>
+			<hnm_mouthpicture picture="hIndu"/>
+			<hnm_head tag="SR"/>
+		</hamnosys_nonmanual>
+		<hamnosys_manual>
+			<hamfist/>
+			<hamthumboutmod/>
+			<hamextfingeril/>
+			<hampalml/>
+			<hamheadtop/>
+			<hammoveu/>
+			<hammoveu/>
+			<hammoveu/>
+		</hamnosys_manual>
+	</hns_sign>
+
+	<hns_sign gloss="">
+		<hamnosys_nonmanual>
+			<hnm_mouthpicture picture="Vm"/>
+		</hamnosys_nonmanual>
+		<hamnosys_manual>
+			<hamsymmlr/>
+			<hamflathand/>
+			<hamextfingeru/>
+			<hampalml/>
+			<hamseqbegin/>
+			<hamtouch/>
+			<hamfingerpad/>
+			<hammiddlefinger/>
+			<hampalm/>
+			<hamseqend/>
+			<hamshouldertop/>
+		</hamnosys_manual>
+	</hns_sign>
+
+</sigml>

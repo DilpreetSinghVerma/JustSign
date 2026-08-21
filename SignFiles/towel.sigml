@@ -1,0 +1,45 @@
+<sigml>
+	<hns_sign gloss="">
+		<hamnosys_nonmanual>
+			<hnm_mouthpicture picture="ta_Ul@"/>
+		</hamnosys_nonmanual>
+		<hamnosys_manual>
+			<hamsymmlr/>
+			<hamparbegin/>
+			<hamfist/>
+			<hamplus/>
+			<hamfist/>
+			<hamparend/>
+			<hamparbegin/>
+			<hamextfingeru/>
+			<hampalmdr/>
+			<hamplus/>
+			<hamextfingeru/>
+			<hampalmdl/>
+			<hamparend/>
+			<hamparbegin/>
+			<hamhead/>
+			<hamplus/>
+			<hamhead/>
+			<hamparend/>
+			<hamparbegin/>
+			<hammover/>
+			<hammoveor/>
+			<hamplus/>
+			<hammovel/>
+			<hamparend/>
+			<hamparbegin/>
+			<hammoveil/>
+			<hamplus/>
+			<hammoveol/>
+			<hamparend/>
+			<hamparbegin/>
+			<hammoveor/>
+			<hamplus/>
+			<hammoveir/>
+			<hamparend/>
+			<hamrepeatfromstart/>
+		</hamnosys_manual>
+	</hns_sign>
+
+</sigml>

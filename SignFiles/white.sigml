@@ -1,0 +1,11 @@
+<sigml>
+	<hns_sign gloss="">
+		<hamnosys_nonmanual>
+			<hnm_mouthpicture picture="hwa_It"/>
+			<hnm_head tag="NO"/>
+			<hnm_eyebrows tag="RB"/>
+		</hamnosys_nonmanual>
+		<hamnosys_manual><hamfinger2/><hamthumbacrossmod/><hamfingerbendmod/><hamextfingeru/><hampalmu/><hamlips/><hamnodding/><hammoveo/><hamsmallmod/></hamnosys_manual>
+	</hns_sign>
+
+</sigml>

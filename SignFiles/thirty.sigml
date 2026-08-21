@@ -1,0 +1,42 @@
+<sigml>
+	<hns_sign gloss="">
+		<hamnosys_nonmanual>
+			<hnm_mouthpicture picture="T3:di:"/>
+		</hamnosys_nonmanual>
+		<hamnosys_manual>
+			<hampinch12open/>
+			<hampinky/>
+			<hamdoublehooked/>
+			<hamextfingeru/>
+			<hampalmd/>
+			<hamreplace/>
+			<hampinch12open/>
+			<hamfingerstraightmod/>
+			<hampinky/>
+			<hamdoublehooked/>
+			<hamreplace/>
+			<hampinch12open/>
+			<hampinky/>
+			<hamdoublehooked/>
+			<hamextfingeru/>
+			<hampalmd/>
+			<hamreplace/>
+			<hampinch12open/>
+			<hamfingerstraightmod/>
+			<hampinky/>
+			<hamdoublehooked/>
+			<hamreplace/>
+			<hampinch12open/>
+			<hampinky/>
+			<hamdoublehooked/>
+			<hamextfingeru/>
+			<hampalmd/>
+			<hamreplace/>
+			<hampinch12open/>
+			<hamfingerstraightmod/>
+			<hampinky/>
+			<hamdoublehooked/>
+		</hamnosys_manual>
+	</hns_sign>
+
+</sigml>

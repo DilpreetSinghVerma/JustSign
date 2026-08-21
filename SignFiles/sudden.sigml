@@ -1,0 +1,21 @@
+<sigml>
+	<hns_sign gloss="">
+		<hamnosys_nonmanual>
+			<hnm_eyelids tag="WB"/>
+<hnm_mouthpicture picture="sVdVn"/>
+		</hamnosys_nonmanual>
+		<hamnosys_manual>
+			<hamfinger2345/>
+			<hamthumboutmod/>
+			<hamextfingeru/>
+			<hampalml/>
+			<hamshoulders/>
+			<hamlrbeside/>
+			<hamreplace/>
+			<hamextfingeru/>
+			<hampalmu/>
+			<hamhead/>
+		</hamnosys_manual>
+	</hns_sign>
+
+</sigml>

@@ -1,0 +1,79 @@
+<sigml>
+	<hns_sign gloss="">
+		<hamnosys_nonmanual>
+			<hnm_mouthpicture picture="h@_Um"/>
+		</hamnosys_nonmanual>
+		<hamnosys_manual>
+			<hamsymmlr/>
+			<hamflathand/>
+			<hamextfingerul/>
+			<hampalmd/>
+			<hamtouch/>
+			<hamheadtop/>
+			<hammovedr/>
+			<hammovedr/>
+		</hamnosys_manual>
+	</hns_sign>
+
+	<hns_sign gloss="">
+		<hamnosys_nonmanual>
+		</hamnosys_nonmanual>
+		<hamnosys_manual>
+			<hamsymmlr/>
+			<hamfist/>
+			<hamextfingerol/>
+			<hampalmu/>
+			<hamparbegin/>
+			<hammoveo/>
+			<hammovei/>
+			<hammovei/>
+			<hammoveo/>
+			<hamplus/>
+			<hammovei/>
+			<hammoveo/>
+			<hammoveo/>
+			<hammovei/>
+			<hamparend/>
+			<hamparbegin/>
+			<hammoveo/>
+			<hammovei/>
+			<hammovei/>
+			<hammoveo/>
+			<hamplus/>
+			<hammovei/>
+			<hammoveo/>
+			<hammoveo/>
+			<hammovei/>
+			<hamparend/>
+		</hamnosys_manual>
+	</hns_sign>
+
+	<hns_sign gloss="">
+		<hamnosys_nonmanual>
+			<hnm_eyegaze tag="DN"/>
+			<hnm_eyebrows tag="FU"/>
+		</hamnosys_nonmanual>
+		<hamnosys_manual>
+			<hamsymmlr/>
+			<hamflathand/>
+			<hamparbegin/>
+			<hamextfingero/>
+			<hampalmd/>
+			<hamplus/>
+			<hamextfingerr/>
+			<hampalmd/>
+			<hamparend/>
+			<hamparbegin/>
+			<hamchest/>
+			<hamplus/>
+			<hamshouldertop/>
+			<hamparend/>
+			<hamparbegin/>
+			<hammoveo/>
+			<hamplus/>
+			<hamnomotion/>
+			<hamparend/>
+		</hamnosys_manual>
+	</hns_sign>
+
+</sigml>

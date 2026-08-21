@@ -1,0 +1,20 @@
+<sigml>
+	<hns_sign gloss="">
+		<hamnosys_nonmanual>
+			<hnm_mouthpicture picture="Vp"/>
+			<hnm_head tag="PF"/>
+			<hnm_eyegaze tag="AD"/>
+			<hnm_eyebrows tag="FU"/>
+		</hamnosys_nonmanual>
+		<hamnosys_manual>
+			<hamfinger2/>
+			<hamextfingeru/>
+			<hampalml/>
+			<hamshoulders/>
+			<hammoveu/>
+			<hammoved/>
+			<hammoveu/>
+		</hamnosys_manual>
+	</hns_sign>
+
+</sigml>

@@ -1,0 +1,9 @@
+<sigml><hns_sign gloss=""><hamnosys_nonmanual><hnm_body tag=""/><hnm_shoulder tag=""/><hnm_head tag=""/><hnm_mouthpicture picture="UTi:"/><hnm_eyegaze tag=""/><hnm_eyebrows tag=""/><hnm_nose tag=""/><hnm_eyelids tag=""/></hamnosys_nonmanual><hamnosys_manual><hamceeall/><hamextfingeru/><hampalml/><hamshouldertop/><hambetween/><hamshoulders/><hamreplace/><hampinchall/><hamreplace/><hamceeall/><hammover/><hamreplace/><hampinchall/><hamreplace/><hamceeall/></hamnosys_manual></hns_sign>
+
+<hns_sign gloss=""><hamnosys_nonmanual><hnm_body tag=""/><hnm_shoulder tag=""/><hnm_head tag="SL"/><hnm_mouthpicture picture=""/><hnm_eyegaze tag=""/><hnm_eyebrows tag=""/><hnm_nose tag=""/><hnm_eyelids tag=""/></hamnosys_nonmanual><hamnosys_manual><hamsymmlr/><hamfinger2/><hamparbegin/><hamextfingerl/><hampalml/><hamplus/><hamextfingerur/><hampalmr/><hamparend/><hamparbegin/><hamshouldertop/><hamlrbeside/><hamplus/><hamshoulders/><hamparend/><hamparbegin/><hammovel/><hamsmallmod/><hamplus/><hamnomotion/><hamparend/></hamnosys_manual></hns_sign>
+
+<hns_sign gloss=""><hamnosys_nonmanual><hnm_body tag=""/><hnm_shoulder tag=""/><hnm_head tag="SL"/><hnm_mouthpicture picture=""/><hnm_eyegaze tag=""/><hnm_eyebrows tag=""/><hnm_nose tag=""/><hnm_eyelids tag=""/></hamnosys_nonmanual><hamnosys_manual><hamsymmlr/><hamfinger2/><hamextfingeru/><hampalmd/><hamparbegin/><hamshouldertop/><hamclose/><hamplus/><hamshoulders/><hamparend/><hamparbegin/><hammoved/><hammoved/><hamplus/><hamnomotion/><hamparend/></hamnosys_manual></hns_sign>
+
+<hns_sign gloss=""><hamnosys_nonmanual><hnm_body tag=""/><hnm_shoulder tag=""/><hnm_head tag=""/><hnm_mouthpicture picture=""/><hnm_eyegaze tag=""/><hnm_eyebrows tag=""/><hnm_nose tag=""/><hnm_eyelids tag=""/></hamnosys_nonmanual><hamnosys_manual><hamfinger2/><hamextfingerur/><hampalml/><hamhead/><hamlrbeside/></hamnosys_manual></hns_sign>
+
+</sigml>

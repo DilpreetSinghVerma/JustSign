@@ -1,0 +1,30 @@
+<sigml>
+	<hns_sign gloss="">
+		<hamnosys_nonmanual>
+			<hnm_head tag="SL"/>
+		</hamnosys_nonmanual>
+		<hamnosys_manual>
+			<hamsymmlr/>
+			<hamfingerstraightmod/>
+			<hamlargemod/>
+			<hamfinger2345/>
+			<hamthumboutmod/>
+			<hamparbegin/>
+			<hamextfingeru/>
+			<hampalmul/>
+			<hamplus/>
+			<hamextfingeru/>
+			<hampalmur/>
+			<hamparend/>
+			<hamparbegin/>
+			<hamheadtop/>
+			<hamlrbeside/>
+			<hamplus/>
+			<hamlrbeside/>
+			<hamheadtop/>
+			<hamparend/>
+			<hamtwisting/>
+		</hamnosys_manual>
+	</hns_sign>
+
+</sigml>
